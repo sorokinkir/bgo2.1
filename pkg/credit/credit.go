@@ -23,7 +23,7 @@ func Calculate(sumCredit, periodCredit, rateCredit int64) (monthPayment, sumPaym
 	sumPayment = (periodCredit * monthPayment)
 	overPayment = (sumPayment - sumCredit)
 
-	return convertToPenny(monthPayment), convertToPenny(sumPayment), convertToPenny(overPayment)
+	return convertToPenny(monthPayment), convertToPenny(overPayment), convertToPenny(sumPayment)
 }
 
 // convert penny from rubles

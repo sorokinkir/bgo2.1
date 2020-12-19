@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	monthPayment, sumPayment, overPayment := credit.Calculate(1_000_000, 36, 20)
+	monthPayment, overPayment, sumPayment := credit.Calculate(1_000_000, 36, 20)
 	
 	fmt.Printf("Ежемесячный платеж: %v\n", monthPayment)
 	fmt.Printf("Переплата по кредиту: %v\n", overPayment)
